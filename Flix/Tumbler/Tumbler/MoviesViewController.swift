@@ -35,7 +35,9 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 self.movies = dataDictionary["results"] as! [[String:Any]]
                 self.tableView.reloadData()
                 
-                print(dataDictionary)
+//                print(self.movies)
+                
+//                print(dataDictionary)
                 // TODO: Get the array of movies
                 // TODO: Store the movies in a property to use elsewhere
                 // TODO: Reload your table view data
@@ -61,10 +63,29 @@ class MoviesViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let posterURL = URL(string: baseURL + posterPath)
         
         cell.titleLabel.text = title
+        cell.titleLabel.sizeToFit()
+        
         cell.synopsisLabel.text = synopsis
+        cell.synopsisLabel.sizeToFit()
+        
         cell.posterView.af_setImage(withURL: posterURL!)
 
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Loading up details screen")
+        
+        // find the selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        // pass the selected movie to the details view controller
+        let detailsViewController = segue.destination as! MovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

@@ -13,6 +13,9 @@
 		5E07C0612213C537002D592A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E07C0602213C537002D592A /* Assets.xcassets */; };
 		5E07C0642213C537002D592A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E07C0622213C537002D592A /* LaunchScreen.storyboard */; };
 		5E07C06C2213CEDD002D592A /* movieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E07C06B2213CEDD002D592A /* movieCell.swift */; };
+		5EF9D6A4221CF7A8000AED98 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9D6A3221CF7A8000AED98 /* MovieDetailsViewController.swift */; };
+		5EF9D6A6221D0088000AED98 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9D6A5221D0088000AED98 /* MovieGridViewController.swift */; };
+		5EF9D6A9221D0571000AED98 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF9D6A8221D0571000AED98 /* MovieGridCell.swift */; };
 		DDC43A9FD851DB67CF1514F4 /* Pods_Tumbler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 031E4FACE81B3E43945EAEBA /* Pods_Tumbler.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		5E07C0632213C537002D592A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E07C0652213C537002D592A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E07C06B2213CEDD002D592A /* movieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieCell.swift; sourceTree = "<group>"; };
+		5EF9D6A3221CF7A8000AED98 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		5EF9D6A5221D0088000AED98 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		5EF9D6A8221D0571000AED98 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		D70B6141042AA1F51F1C8D9B /* Pods-Tumbler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tumbler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tumbler/Pods-Tumbler.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,11 +80,14 @@
 			children = (
 				5E07C0592213C535002D592A /* AppDelegate.swift */,
 				5E07C05B2213C535002D592A /* MoviesViewController.swift */,
+				5EF9D6A3221CF7A8000AED98 /* MovieDetailsViewController.swift */,
+				5EF9D6A5221D0088000AED98 /* MovieGridViewController.swift */,
 				5E07C05D2213C535002D592A /* Main.storyboard */,
 				5E07C0602213C537002D592A /* Assets.xcassets */,
 				5E07C0622213C537002D592A /* LaunchScreen.storyboard */,
 				5E07C0652213C537002D592A /* Info.plist */,
 				5E07C06B2213CEDD002D592A /* movieCell.swift */,
+				5EF9D6A8221D0571000AED98 /* MovieGridCell.swift */,
 			);
 			path = Tumbler;
 			sourceTree = "<group>";
@@ -213,8 +222,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF9D6A6221D0088000AED98 /* MovieGridViewController.swift in Sources */,
+				5EF9D6A4221CF7A8000AED98 /* MovieDetailsViewController.swift in Sources */,
 				5E07C06C2213CEDD002D592A /* movieCell.swift in Sources */,
 				5E07C05C2213C535002D592A /* MoviesViewController.swift in Sources */,
+				5EF9D6A9221D0571000AED98 /* MovieGridCell.swift in Sources */,
 				5E07C05A2213C535002D592A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
